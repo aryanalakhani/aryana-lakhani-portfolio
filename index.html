@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aryana Lakhani — Civil Engineering Portfolio</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Italiana&display=swap');
 
   :root{
     --cream:#FFF8F0;
@@ -576,6 +576,86 @@
     main{padding:0 20px;}
     .feature-card{padding:24px 18px;}
     header.hero::after{font-size:1.2rem;right:22px;}
+  }
+
+  /* ===== CHIC EDITORIAL DIRECTION ===== */
+  :root{
+    --cream:#F5F0E8;
+    --card:#FAF7F1;
+    --navy:#201D1B;
+    --peach:#7B2938;
+    --peach-deep:#7B2938;
+    --blush:#D9B7BC;
+    --mint:#D8D8CC;
+    --line:#BDB4A8;
+    --ink:#201D1B;
+    --ink-soft:#68615A;
+  }
+  body{background:var(--cream);background-image:none;font-family:'DM Sans',sans-serif;}
+  body::before{display:none;}
+  header.hero{background:var(--cream);border-bottom:1px solid var(--ink);min-height:auto;}
+  header.hero::before{display:none;}
+  header.hero::after{content:"technical thinking, creative eye.";font-family:'Italiana','Times New Roman',serif;font-weight:400;font-size:1.5rem;color:var(--peach);bottom:32px;}
+  .hero-inner{max-width:1180px;padding:72px 36px 110px;}
+  .badge-row{margin-bottom:38px;}
+  .badge-icon{display:none;}
+  .badge-text{padding:0;background:none;border-radius:0;transform:none;text-transform:uppercase;letter-spacing:.15em;color:var(--peach);}
+  .hero-top{display:grid;grid-template-columns:1.5fr .5fr;gap:60px;}
+  .hero-name{font-family:'Italiana','Times New Roman',serif;font-weight:400;font-size:clamp(4.8rem,10vw,8.2rem);letter-spacing:-.055em;line-height:.82;max-width:8ch;color:var(--ink);}
+  .hero-name::after{content:"Civil engineering + construction";font-family:'DM Sans',sans-serif;font-size:.76rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--peach);transform:none;margin:28px 0 0 5px;}
+  .hero-role{max-width:56ch;margin-top:25px;font-size:1rem;line-height:1.75;}
+  .hero-meta{padding:24px 0;background:none;border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);box-shadow:none;transform:none;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;align-self:end;}
+  .hero-stats{grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);}
+  .stat-card,.stat-card:nth-child(odd),.stat-card:nth-child(even){padding:18px 20px;background:transparent;border:0;border-right:1px solid var(--line);border-radius:0;box-shadow:none;transform:none;}
+  .stat-card:last-child{border-right:0;}
+  .stat-card::before{display:none;}
+  .stat-card .k{font-size:.6rem;letter-spacing:.14em;color:var(--peach);}
+  .stat-card .v{font-family:'DM Sans',sans-serif;font-weight:500;color:var(--ink);}
+  nav.pillnav{background:rgba(245,240,232,.94);border-bottom:1px solid var(--ink);}
+  nav.pillnav .row{max-width:1180px;justify-content:flex-end;}
+  nav.pillnav a{text-transform:uppercase;letter-spacing:.12em;font-size:.63rem;}
+  nav.pillnav a:hover{background:none;color:var(--peach);transform:none;}
+  main{max-width:1180px;}
+  section{padding:86px 0;}
+  section+section{border-top:1px solid var(--ink);}
+  .sheet-label{justify-content:space-between;align-items:baseline;margin-bottom:38px;}
+  .sheet-icon{display:none;}
+  .sheet-title{font-family:'Italiana','Times New Roman',serif;font-weight:400;font-size:clamp(2.7rem,5vw,4.2rem);letter-spacing:-.03em;color:var(--ink);}
+  .sheet-title::after{display:none;}
+  .sheet-label::after{content:"ARYANA LAKHANI · PORTFOLIO";font:500 .6rem 'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--peach);}
+  .edu-item,.skill-cat,.exp-item,.cert-card,.proj-card,.feature-card,
+  .edu-item:nth-of-type(even),.edu-item:nth-of-type(odd),.exp-item:nth-of-type(even),.exp-item:nth-of-type(odd),
+  .skill-cat:first-child,.skill-cat:last-child,.proj-card:first-child,.proj-card:last-child{
+    background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;transform:none;
+  }
+  .edu-item,.exp-item{padding:24px 2px;margin:0;}
+  .skills-grid,.cert-cols{gap:0;border-bottom:1px solid var(--line);}
+  .skill-cat,.cert-card{padding:28px 24px;border-right:1px solid var(--line);}
+  .skill-cat:last-child,.cert-card:last-child{border-right:0;}
+  .chip{background:transparent;border:1px solid var(--line);border-radius:0;padding:7px 11px;}
+  .feature-card{padding:34px 0;border-top:1px solid var(--ink);}
+  .feature-card::before,.proj-card::before{display:none;}
+  .project-header h3{font-family:'Italiana','Times New Roman',serif;font-weight:400;font-size:clamp(2rem,4vw,3.3rem);color:var(--ink);}
+  figure.drawing{border:1px solid var(--ink);border-radius:0;padding:8px;box-shadow:none;transform:none;}
+  .proj-grid{gap:0;border-bottom:1px solid var(--ink);}
+  .proj-card{padding:30px 26px;border-right:1px solid var(--ink);}
+  .proj-card:last-child{border-right:0;}
+  .proj-card h4,.edu-item h3,.exp-item h3{font-family:'Italiana','Times New Roman',serif;font-weight:400;color:var(--ink);}
+  .proj-card h4{font-size:1.65rem;}
+  .callout-list li::before{content:"—";color:var(--peach);}
+
+  @media(max-width:680px){
+    .hero-inner{padding:52px 22px 88px;}
+    .hero-top{grid-template-columns:1fr;gap:30px;}
+    .hero-name{font-size:clamp(4rem,22vw,6.4rem);}
+    .hero-meta{width:100%;}
+    .hero-stats{grid-template-columns:1fr 1fr;}
+    .stat-card:nth-child(2){border-right:0;}
+    .stat-card:nth-child(-n+2){border-bottom:1px solid var(--line);}
+    header.hero::after{font-size:1rem;}
+    .sheet-label{display:block;}
+    .sheet-label::after{display:block;margin-top:10px;}
+    .skill-cat,.cert-card,.proj-card{border-right:0;border-bottom:1px solid var(--line);}
   }
 </style>
 </head>
